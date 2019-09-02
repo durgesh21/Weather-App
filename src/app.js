@@ -27,14 +27,14 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
+        title: 'About Us',
         name: 'Durgesh kumar'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'Enter Your location Press submit and enjoy the weather for any help and issue mail me at durgeshkumar.dk570@gmail.com',
         title: 'Help',
         name: 'Durgesh Kumar'
     })
@@ -82,7 +82,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Durgesh Kumar',
         errorMessage: 'Help article not found.'
     })
 })
